@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HRG PC Configurator</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>HRG PC Configurator</h1>
+    <p>Purpose-built systems. Explained.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Build a PC</h2>
+
+      <label>
+        Budget ($)
+        <input id="budget" type="number" value="1200" />
+      </label>
+
+      <label>
+        Primary Use
+        <select id="useCase">
+          <option value="gaming">Gaming</option>
+          <option value="minecraft">Minecraft</option>
+          <option value="roblox">Roblox</option>
+          <option value="general">General / Office</option>
+        </select>
+      </label>
+
+      <button onclick="generateBuild()">Generate Build</button>
+    </section>
+
+    <section class="card">
+      <h2>Recommended Build</h2>
+      <div id="output" class="output">
+        <p>Enter your preferences and click “Generate Build”.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Howard Resource Group</p>
+  </footer>
+
+  <script src="js/engine.js"></script>
+</body>
+</html>
