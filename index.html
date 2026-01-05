@@ -4,41 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HRG PC Configurator</title>
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <h1>HRG PC Configurator</h1>
-    <p>Purpose-built systems. Explained.</p>
+    <p>Auto-configured builds with compatibility checks + clear reasoning.</p>
   </header>
 
   <main class="container">
     <section class="card">
-      <h2>Build a PC</h2>
+      <h2>Build Inputs</h2>
 
-      <label>
-        Budget ($)
-        <input id="budget" type="number" value="1200" />
-      </label>
+      <div class="grid2">
+        <label>
+          Budget ($)
+          <input id="budget" type="number" min="400" step="50" value="1200" />
+        </label>
 
-      <label>
-        Primary Use
-        <select id="useCase">
-          <option value="gaming">Gaming</option>
-          <option value="minecraft">Minecraft</option>
-          <option value="roblox">Roblox</option>
-          <option value="general">General / Office</option>
-        </select>
-      </label>
+        <label>
+          Primary Use
+          <select id="useCase">
+            <option value="gaming">Gaming (general)</option>
+            <option value="minecraft">Minecraft</option>
+            <option value="roblox">Roblox</option>
+            <option value="general">General / Office</option>
+          </select>
+        </label>
 
-      <button onclick="generateBuild()">Generate Build</button>
+        <label>
+          Target Resolution
+          <select id="resolution">
+            <option value="1080">1080p</option>
+            <option value="1440" selected>1440p</option>
+          </select>
+        </label>
+
+        <label>
+          Preference
+          <select id="preference">
+            <option value="value">Value</option>
+            <option value="balanced" selected>Balanced</option>
+            <option value="max">Max Performance</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row">
+        <button id="btnGenerate">Generate 3 Builds</button>
+        <button class="ghost" id="btnShare" disabled>Copy Share Link</button>
+      </div>
+
+      <div id="status" class="status">Loading catalog…</div>
     </section>
 
     <section class="card">
-      <h2>Recommended Build</h2>
-      <div id="output" class="output">
-        <p>Enter your preferences and click “Generate Build”.</p>
+      <h2>Results</h2>
+      <div id="results" class="buildGrid">
+        <p class="muted">Generate builds to see Value / Balanced / Max options.</p>
       </div>
     </section>
   </main>
