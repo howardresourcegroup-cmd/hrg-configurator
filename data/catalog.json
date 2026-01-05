@@ -1,48 +1,244 @@
 {
   "cpu": [
-    { "id": "cpu_5600", "name": "AMD Ryzen 5 5600", "price": 129, "socket": "AM4", "tdp": 65, "tier": 1, "gamingScore": 72 },
-    { "id": "cpu_5700x", "name": "AMD Ryzen 7 5700X", "price": 179, "socket": "AM4", "tdp": 65, "tier": 2, "gamingScore": 80 },
-    { "id": "cpu_5800x3d", "name": "AMD Ryzen 7 5800X3D", "price": 289, "socket": "AM4", "tdp": 105, "tier": 3, "gamingScore": 92 },
-
-    { "id": "cpu_7600", "name": "AMD Ryzen 5 7600", "price": 199, "socket": "AM5", "tdp": 65, "tier": 2, "gamingScore": 86 },
-    { "id": "cpu_7800x3d", "name": "AMD Ryzen 7 7800X3D", "price": 369, "socket": "AM5", "tdp": 120, "tier": 4, "gamingScore": 99 }
+    {
+      "id": "amd_ryzen_5_5600",
+      "brand": "AMD",
+      "model": "Ryzen 5 5600",
+      "socket": "AM4",
+      "generation": "Zen 3",
+      "cores": 6,
+      "threads": 12,
+      "baseClockGHz": 3.5,
+      "boostClockGHz": 4.4,
+      "tdpW": 65,
+      "igpu": false,
+      "memoryType": [
+        "DDR4"
+      ],
+      "pcieVersion": 4,
+      "recommendedRam": "DDR4-3600",
+      "tier": 2,
+      "useCases": [
+        "budget_gaming",
+        "general"
+      ]
+    },
+    {
+      "id": "amd_ryzen_7_5800x3d",
+      "brand": "AMD",
+      "model": "Ryzen 7 5800X3D",
+      "socket": "AM4",
+      "generation": "Zen 3 (3D V-Cache)",
+      "cores": 8,
+      "threads": 16,
+      "baseClockGHz": 3.4,
+      "boostClockGHz": 4.5,
+      "tdpW": 105,
+      "igpu": false,
+      "memoryType": [
+        "DDR4"
+      ],
+      "pcieVersion": 4,
+      "recommendedRam": "DDR4-3600",
+      "tier": 4,
+      "useCases": [
+        "gaming"
+      ]
+    },
+    {
+      "id": "amd_ryzen_5_7600",
+      "brand": "AMD",
+      "model": "Ryzen 5 7600",
+      "socket": "AM5",
+      "generation": "Zen 4",
+      "cores": 6,
+      "threads": 12,
+      "baseClockGHz": 3.8,
+      "boostClockGHz": 5.1,
+      "tdpW": 65,
+      "igpu": true,
+      "memoryType": [
+        "DDR5"
+      ],
+      "pcieVersion": 5,
+      "recommendedRam": "DDR5-6000",
+      "tier": 3,
+      "useCases": [
+        "gaming",
+        "general"
+      ]
+    },
+    {
+      "id": "amd_ryzen_7_7800x3d",
+      "brand": "AMD",
+      "model": "Ryzen 7 7800X3D",
+      "socket": "AM5",
+      "generation": "Zen 4 (3D V-Cache)",
+      "cores": 8,
+      "threads": 16,
+      "baseClockGHz": 4.2,
+      "boostClockGHz": 5,
+      "tdpW": 120,
+      "igpu": true,
+      "memoryType": [
+        "DDR5"
+      ],
+      "pcieVersion": 5,
+      "recommendedRam": "DDR5-6000",
+      "tier": 5,
+      "useCases": [
+        "gaming"
+      ]
+    },
+    {
+      "id": "intel_core_i5_12400f",
+      "brand": "Intel",
+      "model": "Core i5-12400F",
+      "socket": "LGA1700",
+      "generation": "12th Gen (Alder Lake)",
+      "cores": 6,
+      "threads": 12,
+      "baseClockGHz": 2.5,
+      "boostClockGHz": 4.4,
+      "tdpW": 65,
+      "igpu": false,
+      "memoryType": [
+        "DDR4",
+        "DDR5"
+      ],
+      "pcieVersion": 5,
+      "recommendedRam": "DDR4-3200 / DDR5-5600",
+      "tier": 2,
+      "useCases": [
+        "budget_gaming",
+        "general"
+      ]
+    },
+    {
+      "id": "intel_core_i7_13700k",
+      "brand": "Intel",
+      "model": "Core i7-13700K",
+      "socket": "LGA1700",
+      "generation": "13th Gen (Raptor Lake)",
+      "cores": 16,
+      "threads": 24,
+      "pCores": 8,
+      "eCores": 8,
+      "baseClockGHz": 3.4,
+      "boostClockGHz": 5.4,
+      "tdpW": 125,
+      "igpu": true,
+      "memoryType": [
+        "DDR4",
+        "DDR5"
+      ],
+      "pcieVersion": 5,
+      "recommendedRam": "DDR5-6000",
+      "tier": 4,
+      "useCases": [
+        "gaming",
+        "creator"
+      ]
+    }
   ],
   "gpu": [
-    { "id": "gpu_3060", "name": "NVIDIA GeForce RTX 3060 12GB", "price": 249, "tdp": 170, "lengthMm": 242, "tier": 1, "gamingScore1080": 78, "gamingScore1440": 65 },
-    { "id": "gpu_4060", "name": "NVIDIA GeForce RTX 4060 8GB", "price": 289, "tdp": 115, "lengthMm": 240, "tier": 1, "gamingScore1080": 82, "gamingScore1440": 68 },
-    { "id": "gpu_4070", "name": "NVIDIA GeForce RTX 4070 12GB", "price": 499, "tdp": 200, "lengthMm": 260, "tier": 3, "gamingScore1080": 95, "gamingScore1440": 87 },
-    { "id": "gpu_4070s", "name": "NVIDIA GeForce RTX 4070 SUPER 12GB", "price": 599, "tdp": 220, "lengthMm": 270, "tier": 4, "gamingScore1080": 98, "gamingScore1440": 92 }
+    {
+      "id": "nvidia_rtx_3060_12gb",
+      "brand": "NVIDIA",
+      "model": "GeForce RTX 3060 12GB",
+      "vramGB": 12,
+      "vramType": "GDDR6",
+      "tdpW": 170,
+      "pcieVersion": 4,
+      "lengthMM": 242,
+      "powerConnectors": [
+        "8-pin"
+      ],
+      "tier": 2,
+      "useCases": [
+        "1080p_gaming",
+        "budget_creator"
+      ]
+    },
+    {
+      "id": "nvidia_rtx_4060",
+      "brand": "NVIDIA",
+      "model": "GeForce RTX 4060 8GB",
+      "vramGB": 8,
+      "vramType": "GDDR6",
+      "tdpW": 115,
+      "pcieVersion": 4,
+      "lengthMM": 240,
+      "powerConnectors": [
+        "8-pin"
+      ],
+      "tier": 2,
+      "useCases": [
+        "1080p_gaming",
+        "efficient_builds"
+      ]
+    },
+    {
+      "id": "nvidia_rtx_4070_super",
+      "brand": "NVIDIA",
+      "model": "GeForce RTX 4070 SUPER 12GB",
+      "vramGB": 12,
+      "vramType": "GDDR6X",
+      "tdpW": 220,
+      "pcieVersion": 4,
+      "lengthMM": 270,
+      "powerConnectors": [
+        "12VHPWR"
+      ],
+      "tier": 4,
+      "useCases": [
+        "1440p_gaming",
+        "creator",
+        "ai"
+      ]
+    },
+    {
+      "id": "amd_rx_6700_xt",
+      "brand": "AMD",
+      "model": "Radeon RX 6700 XT 12GB",
+      "vramGB": 12,
+      "vramType": "GDDR6",
+      "tdpW": 230,
+      "pcieVersion": 4,
+      "lengthMM": 267,
+      "powerConnectors": [
+        "8-pin",
+        "8-pin"
+      ],
+      "tier": 3,
+      "useCases": [
+        "1440p_gaming"
+      ]
+    },
+    {
+      "id": "amd_rx_7800_xt",
+      "brand": "AMD",
+      "model": "Radeon RX 7800 XT 16GB",
+      "vramGB": 16,
+      "vramType": "GDDR6",
+      "tdpW": 263,
+      "pcieVersion": 4,
+      "lengthMM": 280,
+      "powerConnectors": [
+        "8-pin",
+        "8-pin"
+      ],
+      "tier": 4,
+      "useCases": [
+        "1440p_gaming",
+        "high_vram"
+      ]
+    }
   ],
-  "motherboard": [
-    { "id": "mb_b550m", "name": "B550 mATX (AM4)", "price": 109, "socket": "AM4", "ramType": "DDR4", "formFactor": "mATX", "m2Slots": 2, "usbCHeader": false, "tier": 1 },
-    { "id": "mb_b550_atx", "name": "B550 ATX (AM4)", "price": 129, "socket": "AM4", "ramType": "DDR4", "formFactor": "ATX", "m2Slots": 2, "usbCHeader": true, "tier": 2 },
-
-    { "id": "mb_b650m", "name": "B650 mATX (AM5)", "price": 149, "socket": "AM5", "ramType": "DDR5", "formFactor": "mATX", "m2Slots": 2, "usbCHeader": true, "tier": 2 },
-    { "id": "mb_b650_atx", "name": "B650 ATX (AM5)", "price": 179, "socket": "AM5", "ramType": "DDR5", "formFactor": "ATX", "m2Slots": 3, "usbCHeader": true, "tier": 3 }
-  ],
-  "ram": [
-    { "id": "ram_d4_16", "name": "16GB (2x8) DDR4-3200", "price": 39, "ramType": "DDR4", "gb": 16, "tier": 1 },
-    { "id": "ram_d4_32", "name": "32GB (2x16) DDR4-3600", "price": 69, "ramType": "DDR4", "gb": 32, "tier": 2 },
-
-    { "id": "ram_d5_32", "name": "32GB (2x16) DDR5-6000", "price": 89, "ramType": "DDR5", "gb": 32, "tier": 2 },
-    { "id": "ram_d5_64", "name": "64GB (2x32) DDR5-6000", "price": 169, "ramType": "DDR5", "gb": 64, "tier": 4 }
-  ],
-  "storage": [
-    { "id": "ssd_1tb", "name": "1TB NVMe SSD (Gen4)", "price": 59, "type": "NVMe", "gb": 1000, "tier": 1 },
-    { "id": "ssd_2tb", "name": "2TB NVMe SSD (Gen4)", "price": 99, "type": "NVMe", "gb": 2000, "tier": 2 }
-  ],
-  "psu": [
-    { "id": "psu_650", "name": "650W 80+ Gold", "price": 79, "watts": 650, "tier": 1 },
-    { "id": "psu_750", "name": "750W 80+ Gold", "price": 99, "watts": 750, "tier": 2 },
-    { "id": "psu_850", "name": "850W 80+ Gold", "price": 119, "watts": 850, "tier": 3 }
-  ],
-  "case": [
-    { "id": "case_matx_air", "name": "Airflow mATX Mid Tower", "price": 69, "supports": ["mATX", "ITX"], "gpuMaxMm": 330, "coolerMaxMm": 160, "tier": 1 },
-    { "id": "case_atx_air", "name": "Airflow ATX Mid Tower", "price": 89, "supports": ["ATX", "mATX", "ITX"], "gpuMaxMm": 360, "coolerMaxMm": 170, "tier": 2 }
-  ],
-  "cooler": [
-    { "id": "cooler_stock", "name": "Stock / Basic Air Cooler", "price": 0, "heightMm": 135, "tier": 1 },
-    { "id": "cooler_tower", "name": "120mm Tower Air Cooler", "price": 29, "heightMm": 155, "tier": 1 },
-    { "id": "cooler_dual", "name": "Dual-Tower Air Cooler", "price": 59, "heightMm": 160, "tier": 2 }
-  ]
+  "motherboard": [],
+  "ram": [],
+  "storage": [],
+  "psu": [],
+  "case": [],
+  "cooler": []
 }

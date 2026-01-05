@@ -1,0 +1,30 @@
+{
+  "minecraft": {
+    "label": "Minecraft",
+    "target": { "resolution": 1080 },
+    "weights": { "cpu": 0.55, "gpu": 0.35, "value": 0.10 },
+    "minimums": { "ramGb": 16, "storageGb": 1000, "psuHeadroom": 1.45 },
+    "notes": ["CPU & RAM matter more than GPU for many modded scenarios."]
+  },
+  "roblox": {
+    "label": "Roblox",
+    "target": { "resolution": 1080 },
+    "weights": { "cpu": 0.50, "gpu": 0.30, "value": 0.20 },
+    "minimums": { "ramGb": 16, "storageGb": 1000, "psuHeadroom": 1.45 },
+    "notes": ["Prioritize smooth CPU performance and stable drivers."]
+  },
+  "gaming": {
+    "label": "Gaming (General)",
+    "target": { "resolution": 1440 },
+    "weights": { "cpu": 0.35, "gpu": 0.55, "value": 0.10 },
+    "minimums": { "ramGb": 32, "storageGb": 1000, "psuHeadroom": 1.55 },
+    "notes": ["GPU priority increases with resolution."]
+  },
+  "general": {
+    "label": "General / Office",
+    "target": { "resolution": 1080 },
+    "weights": { "cpu": 0.40, "gpu": 0.10, "value": 0.50 },
+    "minimums": { "ramGb": 16, "storageGb": 1000, "psuHeadroom": 1.35 },
+    "notes": ["Value, responsiveness, and quiet operation are key."]
+  }
+}

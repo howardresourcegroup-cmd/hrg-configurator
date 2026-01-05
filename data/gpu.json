@@ -1,0 +1,67 @@
+[
+  {
+    "id": "nvidia_rtx_3060_12gb",
+    "brand": "NVIDIA",
+    "model": "GeForce RTX 3060 12GB",
+    "vramGB": 12,
+    "vramType": "GDDR6",
+    "tdpW": 170,
+    "pcieVersion": 4,
+    "lengthMM": 242,
+    "powerConnectors": ["8-pin"],
+    "tier": 2,
+    "useCases": ["1080p_gaming", "budget_creator"]
+  },
+  {
+    "id": "nvidia_rtx_4060",
+    "brand": "NVIDIA",
+    "model": "GeForce RTX 4060 8GB",
+    "vramGB": 8,
+    "vramType": "GDDR6",
+    "tdpW": 115,
+    "pcieVersion": 4,
+    "lengthMM": 240,
+    "powerConnectors": ["8-pin"],
+    "tier": 2,
+    "useCases": ["1080p_gaming", "efficient_builds"]
+  },
+  {
+    "id": "nvidia_rtx_4070_super",
+    "brand": "NVIDIA",
+    "model": "GeForce RTX 4070 SUPER 12GB",
+    "vramGB": 12,
+    "vramType": "GDDR6X",
+    "tdpW": 220,
+    "pcieVersion": 4,
+    "lengthMM": 270,
+    "powerConnectors": ["12VHPWR"],
+    "tier": 4,
+    "useCases": ["1440p_gaming", "creator", "ai"]
+  },
+  {
+    "id": "amd_rx_6700_xt",
+    "brand": "AMD",
+    "model": "Radeon RX 6700 XT 12GB",
+    "vramGB": 12,
+    "vramType": "GDDR6",
+    "tdpW": 230,
+    "pcieVersion": 4,
+    "lengthMM": 267,
+    "powerConnectors": ["8-pin", "8-pin"],
+    "tier": 3,
+    "useCases": ["1440p_gaming"]
+  },
+  {
+    "id": "amd_rx_7800_xt",
+    "brand": "AMD",
+    "model": "Radeon RX 7800 XT 16GB",
+    "vramGB": 16,
+    "vramType": "GDDR6",
+    "tdpW": 263,
+    "pcieVersion": 4,
+    "lengthMM": 280,
+    "powerConnectors": ["8-pin", "8-pin"],
+    "tier": 4,
+    "useCases": ["1440p_gaming", "high_vram"]
+  }
+]
